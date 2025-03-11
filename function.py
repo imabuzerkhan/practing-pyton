@@ -12,3 +12,17 @@ def Total_Expenses(expense):
 # call the function
 print(Total_Expenses(Abuzer_expense))
 print(Total_Expenses(Danish_expense))
+
+
+
+
+
+
+# finding the volume of cylinder 
+def Volumeofcylinder(radius , height) :
+
+  volume = 3.14 * (radius *2) * height
+  return volume
+
+Volumeofcylinders = Volumeofcylinder(radius=23 , height=6)
+print(f"The volume of cylinder is: {Volumeofcylinders}")
