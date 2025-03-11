@@ -72,4 +72,10 @@ mul = lambda a , b ,c : a*b*c
 print(mul(2,4,6))
 
 # lmabda is a quicly way to write a  function 
-      
+    
+def find_pe_pb(price , eps , book_value ) :
+ pe = price/eps
+ pb = price/book_value
+ return pe ,pb  #it know as a  tuple
+pe_ratio , pb_ratio = find_pe_pb(100, 6 , 8 )
+print(pe_ratio)
