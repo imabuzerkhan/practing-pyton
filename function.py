@@ -56,4 +56,20 @@ result = Addingval(*number)
 print(result)
 
 
+# understanding the *kwargs
+def Kwargs():
+  pass
+
+# understanding lambda 
+
+x = lambda a : a * a 
+print(x(5))
+
+sub = lambda a ,b : b - a
+print(sub(6 , 10))
+
+mul = lambda a , b ,c : a*b*c
+print(mul(2,4,6))
+
+# lmabda is a quicly way to write a  function 
       
