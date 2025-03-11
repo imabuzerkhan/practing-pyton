@@ -26,3 +26,34 @@ def Volumeofcylinder(radius , height) :
 
 Volumeofcylinders = Volumeofcylinder(radius=23 , height=6)
 print(f"The volume of cylinder is: {Volumeofcylinders}")
+
+
+
+
+
+# function arguments 
+def sumall(*args) :  #it recived argument as a tuple 
+  print(args)
+  total = 0
+
+  for sum in args :
+    total += sum
+  return total
+
+#call value
+totalvalue = sumall(1,2,3,4,5,6,7,8,9,10)
+print(f"The sum of all value is: {totalvalue}")
+print(type(totalvalue))
+
+#Example: Passing 1,000 Numbers to a Function
+
+def Addingval(*args) :
+  return sum(args)
+
+
+number = range(1 , 1001)
+result = Addingval(*number)
+print(result)
+
+
+      
