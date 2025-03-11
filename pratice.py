@@ -9,11 +9,11 @@ lessmark = []
 for (student , score) in zip(students,scores):
   if score < 50 :
     print(student , score)
-#     lessmark.append((student , score))
+    lessmark.append((student , score))
   
 
-# for lessscore in lessmark :
-#   print(lessscore)
+for lessscore in lessmark :
+  print(lessscore)
   
 print("---------------------------------------------------------------------")
 
