@@ -19,3 +19,14 @@ You will read this and build a dictionary like this,
     "Anjali": 45
 }
 '''
+
+coustomer_data = {}
+with open("coustomer.txt" , "r") as f :
+  for line in f :
+    coustomer_name , coustomers_data = line.strip().split(",")
+    coustomers_data = int(coustomers_data)
+    coustomer_data[coustomer_name] = coustomers_data
+  
+print( coustomer_data)
+
+
