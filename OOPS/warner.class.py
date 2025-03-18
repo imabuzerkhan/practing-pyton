@@ -26,6 +26,18 @@ class cricketplayer :
   # we can return directly a string which will represent instance of a class
   def __str__(self):
     return f" My name is {warner.first_name} {warner.last_name} . I am {warner.get_age()} years old. and i am from {warner.country} and my average is {warner.get_average()} "
+  
+  # operator overlading for less than 
+  def __lt__(self , other) :
+    self_get_average = self.get_average()
+    other_get_average  = other.get_average()
+    return self_get_average < other_get_average
+  
+  def __eq__(self, other):
+    self_get_age = self.get_age()
+    other_get_age  = other.get_age()
+    return self_get_age < other_get_age
+  
     
 
 
@@ -44,4 +56,8 @@ print(f" My name is {warner.first_name} {warner.last_name} . I am {warner.get_ag
 print(f" My name is {virat.first_name} {virat.last_name} . I am {virat.get_age()} years old. and i am from {virat.country} and my average is {virat.get_average()} ")
 
 print(warner)
+
+# operator overloading 
+print(virat > warner)
+print(virat == warner)
   
