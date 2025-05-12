@@ -27,8 +27,7 @@ while True  :
        print("Too high!" if user > random_num else "Too low!")
    except ValueError : 
        print("please enter a valid number")
-       print("New game start")
-       exit()
+       
      
 
 
