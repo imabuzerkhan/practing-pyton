@@ -1,0 +1,6 @@
+2025-05-15 08:46:01,285 - INFO - this is an info message
+2025-05-15 08:46:01,286 - CRITICAL - This is a critical message
+2025-05-15 08:46:01,287 - WARNING - This is a warning message
+2025-05-15 08:46:01,287 - ERROR - This is error message
+2025-05-15 08:46:35,806 - CRITICAL - This is a critical message
+2025-05-15 08:46:35,806 - ERROR - This is error message
