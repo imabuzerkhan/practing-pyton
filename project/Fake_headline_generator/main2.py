@@ -1,15 +1,22 @@
+import random
+
 print("Hello Welcome to our Fake Headline Generator Website!")
 print("Category options:")
 print("1. Sports")
 print("2. Politics")
 print("3. Superstar")
-print("4. User_choice")
+print("4. User_choice") 
+print("5. Randomly_genrate") 
+
+subjects_list = ["Dog", "Minister", "Actor", "Alien", "Robot"]
+actions_list = ["wins", "steals", "flies to", "destroys", "joins"]
+places_list = ["Delhi", "Mumbai", "Space", "Parliament", "Stadium"]
 
 while True:
 
     # loop to get valid category
     while True:
-        category_choice = input("Choose a category (1/2/3/4): ").strip().lower()
+        category_choice = input("Choose a category (1/2/3/4/5): ").strip().lower()
 
         if category_choice == "1":
             Filename = "Sports.txt"
@@ -23,8 +30,14 @@ while True:
         elif category_choice == "4":
             Filename = "User_choice.txt"
             break
+        elif category_choice == "5":
+             subjects = random.choice(subjects_list)
+             actions = random.choice(actions_list)
+             places = random.choice(places_list)
+             Filename = "Randomly_genrate"
+             break
         else:
-            print("Please enter a valid category (1/2/3/4)")
+            print("Please enter a valid category (1/2/3/4/5)") 
 
     # takes input from user
     subjects = input("Enter the subject: ")
@@ -62,5 +75,4 @@ while True:
         print("Thanks for using our Fake Headline Generator!")
         break
 
-# last message after file saving
-print("✅ Your data is saved in 'headline.txt'!")
+
